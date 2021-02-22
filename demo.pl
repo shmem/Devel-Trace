@@ -17,5 +17,5 @@ close S;
 print "\n";
 print "Press enter to execute this file.  \n";
 <STDIN>;
-system("perl -I./blib/lib -d:Trace sample");
+system("perl -Mlib=./blib/lib -d:Trace sample");
 $? and die "Problem running sample program: $? exit status\n";
